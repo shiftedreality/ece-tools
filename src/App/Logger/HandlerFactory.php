@@ -170,6 +170,7 @@ class HandlerFactory
      */
     private function normalizeLevel(string $level): int
     {
+        /** @phpstan-ignore-next-line */
         $normalizedLevel = Logger::toMonologLevel($level);
 
         if (!is_int($normalizedLevel)) {
